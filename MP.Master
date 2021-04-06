@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MP.master.cs" Inherits="UsersForm.MP" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Hệ thống quản trị - IBCO</title>
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="/css/comfortaa.css" rel="stylesheet preload prefetch" type="text/css" />
+    <link href="/css/font-icon.css" rel="stylesheet preload prefetch" type="text/css" />
+    <link href="/css/bootstrap.css" rel="stylesheet preload prefetch" type="text/css" />
+    <link href="/css/style.css" rel="stylesheet preload prefetch" type="text/css" />
+    <link href="/css/light.css" rel="stylesheet preload prefetch" type="text/css" />
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img class="img-fluid" src="/images/logo-ibco-tech.png" alt="" />
+        </div>
+        <div class="header-menu">
+            <a class="header-menu-href" href="/Customer.aspx">Customer List</a>
+            <a class="header-menu-href" href="/CustomerAdd.aspx">Customer Add</a>
+        </div>
+        <div class="header-switch">
+            Sáng/tối
+        </div>
+        <asp:ContentPlaceHolder ID="Header" runat="server">
+        </asp:ContentPlaceHolder>
+    </header>
+    <div class="content-main">
+        <asp:ContentPlaceHolder ID="Container" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <asp:ContentPlaceHolder ID="Footer" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="/js/main.js"></script>
+    <asp:ContentPlaceHolder ID="Js" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>
